@@ -1,0 +1,16 @@
+if SHIELD_DACTYL_360_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Dactyl 360"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DACTYL_360_LEFT || SHIELD_DACTYL_360_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,11 @@
+file_format: "1"
+id: dactyl_360
+name: Dactyl 360 7x6
+type: shield
+url: https://github.com/abstracthat/dactyl-manuform
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - dactyl_360_left
+  - dactyl_360_right

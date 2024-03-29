@@ -18,5 +18,7 @@
 #
 ---
 include:
-  - board: dactyl_360_left
-  - board: dactyl_360_right
+  - board: nice_nano_v2
+    shield: dactyl_360_left
+  - board: nice_nano_v2
+    shield: dactyl_360_right

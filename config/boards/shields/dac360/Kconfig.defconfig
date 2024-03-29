@@ -1,14 +1,14 @@
-if SHIELD_DACTYL_360_LEFT
+if SHIELD_DAC360LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Dactyl 360"
+    default "Dac360"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_DACTYL_360_LEFT || SHIELD_DACTYL_360_RIGHT
+if SHIELD_DAC360LEFT || SHIELD_DAC360RIGHT
 
 config ZMK_SPLIT
     default y

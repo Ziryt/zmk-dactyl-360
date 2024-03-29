@@ -20,5 +20,3 @@
 include:
   - board: nice_nano_v2
     shield: dactyl_360_left
-  - board: nice_nano_v2
-    shield: dactyl_360_right

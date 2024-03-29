@@ -2,7 +2,7 @@ file_format: "1"
 id: dactyl_360
 name: Dactyl 360 7x6
 type: shield
-url: https://github.com/abstracthat/dactyl-manuform
+url: https://github.com/rlowies/zmk-config-dactyl-360
 requires: [pro_micro]
 features:
   - keys

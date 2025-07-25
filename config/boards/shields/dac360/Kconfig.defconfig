@@ -1,16 +1,34 @@
-if SHIELD_DAC360LEFT
+if SHIELD_DAC360_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Dac360"
+	default "Dac360"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
 
 endif
 
-if SHIELD_DAC360LEFT || SHIELD_DAC360RIGHT
+if SHIELD_DAC360_LEFT || SHIELD_DAC360_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_SLEEP
+    default y
+    
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 900000
+    
+config ZMK_EXT_POWER
+    default y
+
+config ZMK_BATTERY_REPORTING
+    default y
+
+config ZMK_BATTERY_REPORT_INTERVAL
+    default 60
+
+config ZMK_POINTING
     default y
 
 endif

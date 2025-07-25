@@ -4,8 +4,9 @@ name: Dac360 7x6
 type: shield
 url: https://github.com/rlowies/zmk-config-dactyl-360
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - dac360left
-  - dac360right
+  - dac360_left
+  - dac360_right

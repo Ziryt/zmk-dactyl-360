@@ -234,14 +234,14 @@
 
         def {
             bindings = <
-&kp UNDERSCORE  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &none                                                        &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp PAGE_UP
-&kp TAB         &kp Q     &kp W   &kp F   &kp P   &kp B   &kp LC(V)                                                    &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI   &kp PAGE_DOWN
-&kp ESC         &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O      &kp SQT
-&kp LCTRL       &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH   &kp QUESTION
-&tog 7          &kp DOWN  &kp UP  &none   &mo 4                                                                                             &mo 5   &kp HOME   &kp LEFT  &kp RIGHT  &kp END
-                                                                              &kp LALT   &none        &none  &kp DEL
-                                                                                         &kp LGUI     &mo 6
-                                                                     &kp RET  &kp SPACE  &kp LSHFT    &mo 3  &kp BSPC  &kp RSHFT
+&lt 7 EQUAL       &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &none                                                        &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB           &kp Q     &kp W   &kp F   &kp P   &kp B   &kp LC(V)                                                    &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BACKSLASH
+&mt LEFT_GUI ESC  &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
+&kp LEFT_SHIFT    &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp PAGE_UP
+&kp LCTRL         &kp DOWN  &kp UP  &none   &mo 5                                                                                             &mo 5   &kp HOME   &kp LBKT  &kp RBKT  &kp PAGE_DOWN
+                                                                                &kp LALT   &none        &none  &kp DEL
+                                                                                           &kp LGUI     &mo 6
+                                                                       &kp RET  &kp SPACE  &kp LSHFT    &mo 3  &kp BSPC  &kp RSHFT
             >;
 
             label = "def";

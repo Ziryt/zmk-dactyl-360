@@ -234,11 +234,11 @@
 
         def {
             bindings = <
-&kp UNDERSCORE  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &none                                                        &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0       &kp PAGE_UP
-&kp TAB         &kp Q     &kp W   &F_bhv  &P_bhv  &B_bhv  &kp LC(V)                                                    &none        &J_bhv  &L_bhv  &U_bhv     &Y_bhv    &semcol_bhv  &kp PAGE_DOWN
-&kp ESC         &kp A     &R_bhv  &S_bhv  &T_bhv  &kp G   &kp LC(C)                                                    &kp LA(TAB)  &M_bhv  &N_bhv  &E_bhv     &I_bhv    &O_bhv       &kp SQT
-&kp LCTRL       &kp Z     &kp X   &kp C   &D_bhv  &V_bhv                                                                            &K_bhv  &H_bhv  &kp COMMA  &kp DOT   &kp FSLH     &kp QUESTION
-&tog 7          &kp DOWN  &kp UP  &none   &mo 4                                                                                             &mo 5   &kp HOME   &kp LEFT  &kp RIGHT    &kp END
+&kp UNDERSCORE  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &none                                                        &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp PAGE_UP
+&kp TAB         &kp Q     &kp W   &kp F   &kp P   &kp B   &kp LC(V)                                                    &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI   &kp PAGE_DOWN
+&kp ESC         &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O      &kp SQT
+&kp LCTRL       &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH   &kp QUESTION
+&tog 7          &kp DOWN  &kp UP  &none   &mo 4                                                                                             &mo 5   &kp HOME   &kp LEFT  &kp RIGHT  &kp END
                                                                               &kp LALT   &none        &none  &kp DEL
                                                                                          &kp LGUI     &mo 6
                                                                      &kp RET  &kp SPACE  &kp LSHFT    &mo 3  &kp BSPC  &kp RSHFT

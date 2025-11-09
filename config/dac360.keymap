@@ -232,22 +232,22 @@
     keymap {
         compatible = "zmk,keymap";
 
-        def {
+        Colemak {
             bindings = <
-&lt 7 EQUAL       &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                                       &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&lt 5 EQUAL       &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                                       &mo 4        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q     &kp W   &kp F   &kp P   &kp B   &kp LC(V)                                                    &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BACKSLASH
 &mt LEFT_GUI ESC  &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
 &kp LEFT_SHIFT    &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp PAGE_UP
-&kp LCTRL         &kp DOWN  &kp UP  &none   &mo 5                                                                                             &mo 5   &kp HOME   &kp LBKT  &kp RBKT  &kp PAGE_DOWN
-                                                                                &kp LALT   &none        &mo 6  &kp DEL
-                                                                                           &kp LGUI     &mo 6
-                                                                       &kp RET  &kp SPACE  &kp LSHFT    &mo 3  &kp BSPC  &kp RSHFT
+&kp LCTRL         &kp DOWN  &kp UP  &mo 3   &mo 2                                                                                             &mo 2   &mo 3      &kp LBKT  &kp RBKT  &kp PAGE_DOWN
+                                                                                &kp LALT   &none        &mo 3  &kp DEL
+                                                                                           &kp LGUI     &none
+                                                                       &kp RET  &kp SPACE  &kp LSHFT    &none  &kp BSPC  &kp RSHFT
             >;
 
             label = "def";
         };
 
-        qwe {
+        Qwerty {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans    &trans
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                            &trans  &kp Y   &kp U   &kp I   &kp O   &kp P     &trans
@@ -262,52 +262,7 @@
             label = "qwe";
         };
 
-        game {
-            bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &none                                                   &none     &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &to 0
-&kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &none                                                   &none     &kp Y   &kp U     &kp I      &kp O    &kp P      &kp BSLH
-&kp BSPC   &kp A     &kp S     &kp D   &kp F   &kp G   &none                                                   &none     &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B                                                                     &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RET
-&kp LCTRL  &kp FSLH  &kp BSLH  &none   &mo 8                                                                                     &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &none
-                                                                        &kp DEL    &none      &none  &kp LGUI
-                                                                                   &kp ESC    &mo 6
-                                                              &kp LALT  &kp SPACE  &mo 3      &mo 4  &kp BSPC  &kp RALT
-            >;
-
-            label = "game";
-        };
-
-        sym {
-            bindings = <
-&trans  &trans     &trans         &trans            &trans     &trans       &trans                                            &trans    &trans     &trans                &trans                 &trans      &trans    &trans
-&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp PIPE     &trans                                            &trans    &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp BSLH  &trans
-&trans  &kp EXCL   &kp ASTRK      &kp FSLH          &kp EQUAL  &kp AMPS     &trans                                            &kp CAPS  &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &kp DQT   &trans
-&trans  &kp TILDE  &kp PLUS       &kp LBKT          &kp RBKT   &kp PERCENT                                                              &kp AT     &kp COLON             &kp COMMA              &kp DOT     &kp SQT   &kp RA(RIGHT_BRACKET)
-&trans  &trans     &trans         &trans            &trans                                                                                         &trans                &trans                 &trans      &trans    &trans
-                                                                                            &trans  &trans    &trans  &trans
-                                                                                                    &trans    &trans
-                                                                                    &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "sym";
-        };
-
-        raise {
-            bindings = <
-&kp LA(PRINTSCREEN)  &none                    &none       &none         &none            &none  &none                                       &none  &to 0  &none  &none  &none  &none  &to 2
-&kp LG(LS(S))        &none                    &none       &bt BT_SEL 1  &bt BT_SEL 0     &none  &to 9                                       &none  &none  &none  &none  &none  &none  &none
-&none                &none                    &ua_switch  &ru_switch    &colemak_switch  &none  &none                                       &none  &none  &none  &none  &none  &none  &none
-&kp RA(F24)          &none                    &none       &none         &none            &none                                                     &none  &none  &none  &none  &none  &none
-&kp RA(F23)          &sleep_behavior 0 LG(L)  &none       &none         &none                                                                             &none  &none  &none  &none  &none
-                                                                                                              &none  &none    &none  &none
-                                                                                                                     &none    &none
-                                                                                                       &none  &none  &none    &none  &none  &none
-            >;
-
-            label = "ras";
-        };
-
-        nav {
+        Arrows {
             bindings = <
 &trans         &trans    &trans     &trans         &trans  &trans  &trans                                                              &trans  &trans        &trans     &trans     &trans     &trans         &trans
 &kp LG(LS(S))  &trans    &trans     &trans         &trans  &trans  &trans                                                              &trans  &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
@@ -322,7 +277,7 @@
             label = "nav";
         };
 
-        fun {
+        F_keys {
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &trans                                            &trans  &kp F7           &kp F8      &kp F9        &kp F10       &kp F11     &kp F12
 &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &trans                                            &trans  &kp F19          &kp F20     &kp F21       &kp F22       &kp F23     &kp F24
@@ -335,6 +290,21 @@
             >;
 
             label = "fun";
+        };
+
+        ble {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none                                             &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none         &none         &none         &none         &none         &none  &bootloader                                       &bootloader  &none         &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &none  &none                                             &none        &none         &none         &none         &none         &none         &to 0
+&none         &none         &none         &none         &none         &none                                                                 &none         &none         &none         &none         &none         &none
+&bt BT_CLR    &none         &none         &none         &none                                                                                             &none         &none         &none         &none         &bt BT_CLR
+                                                                                                 &none  &none    &none  &none
+                                                                                                        &none    &none
+                                                                                          &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "ble";
         };
 
         num {
@@ -367,19 +337,49 @@
             label = "gnum";
         };
 
-        ble {
+        raise {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none                                             &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none         &none         &none         &none         &none         &none  &bootloader                                       &bootloader  &none         &none         &none         &none         &none         &none
-&none         &none         &none         &none         &none         &none  &none                                             &none        &none         &none         &none         &none         &none         &to 0
-&none         &none         &none         &none         &none         &none                                                                 &none         &none         &none         &none         &none         &none
-&bt BT_CLR    &none         &none         &none         &none                                                                                             &none         &none         &none         &none         &bt BT_CLR
-                                                                                                 &none  &none    &none  &none
-                                                                                                        &none    &none
-                                                                                          &none  &none  &none    &none  &none  &none
+&kp LA(PRINTSCREEN)  &none                    &none       &none         &none            &none  &none                                       &none  &to 0  &none  &none  &none  &none  &to 8
+&kp LG(LS(S))        &none                    &none       &bt BT_SEL 1  &bt BT_SEL 0     &none  &to 4                                       &none  &none  &none  &none  &none  &none  &none
+&none                &none                    &ua_switch  &ru_switch    &colemak_switch  &none  &none                                       &none  &none  &none  &none  &none  &none  &none
+&kp RA(F24)          &none                    &none       &none         &none            &none                                                     &none  &none  &none  &none  &none  &none
+&kp RA(F23)          &sleep_behavior 0 LG(L)  &none       &none         &none                                                                             &none  &none  &none  &none  &none
+                                                                                                              &none  &none    &none  &none
+                                                                                                                     &none    &none
+                                                                                                       &none  &none  &none    &none  &none  &none
             >;
 
-            label = "ble";
+            label = "ras";
+        };
+
+        game {
+            bindings = <
+&kp GRAVE  &kp N1    &kp N2    &kp N3  &kp N4  &kp N5  &none                                                   &none     &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &to 0
+&kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &none                                                   &none     &kp Y   &kp U     &kp I      &kp O    &kp P      &kp BSLH
+&kp BSPC   &kp A     &kp S     &kp D   &kp F   &kp G   &none                                                   &none     &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B                                                                     &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RET
+&kp LCTRL  &kp FSLH  &kp BSLH  &none   &mo 6                                                                                     &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &none
+                                                                        &kp DEL    &none      &none  &kp LGUI
+                                                                                   &kp ESC    &mo 3
+                                                              &kp LALT  &kp SPACE  &mo 9      &mo 7  &kp BSPC  &kp RALT
+            >;
+
+            label = "game";
+        };
+
+        sym {
+            bindings = <
+&trans  &trans     &trans         &trans            &trans     &trans       &trans                                            &trans    &trans     &trans                &trans                 &trans      &trans    &trans
+&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp PIPE     &trans                                            &trans    &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp BSLH  &trans
+&trans  &kp EXCL   &kp ASTRK      &kp FSLH          &kp EQUAL  &kp AMPS     &trans                                            &kp CAPS  &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &kp DQT   &trans
+&trans  &kp TILDE  &kp PLUS       &kp LBKT          &kp RBKT   &kp PERCENT                                                              &kp AT     &kp COLON             &kp COMMA              &kp DOT     &kp SQT   &kp RA(RIGHT_BRACKET)
+&trans  &trans     &trans         &trans            &trans                                                                                         &trans                &trans                 &trans      &trans    &trans
+                                                                                            &trans  &trans    &trans  &trans
+                                                                                                    &trans    &trans
+                                                                                    &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "sym";
         };
     };
 };

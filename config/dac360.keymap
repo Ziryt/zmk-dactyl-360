@@ -236,7 +236,7 @@
             bindings = <
 &lt 5 EQUAL       &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                                       &mo 4        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q     &kp W   &kp F   &kp P   &kp B   &kp LC(V)                                                    &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BACKSLASH
-&mt LEFT_GUI ESC  &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
+&mt LEFT_GUI ESC  &kp A     &kp R   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
 &kp LEFT_SHIFT    &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp PAGE_UP
 &kp LCTRL         &kp DOWN  &kp UP  &mo 3   &mo 2                                                                                             &mo 2   &mo 3      &kp LBKT  &kp RBKT  &kp PAGE_DOWN
                                                                                 &kp LALT   &none        &mo 3  &kp DEL

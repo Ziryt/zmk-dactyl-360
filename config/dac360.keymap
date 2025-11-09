@@ -239,7 +239,7 @@
 &mt LEFT_GUI ESC  &kp A     &kp S   &kp S   &kp T   &kp G   &kp LC(C)                                                    &kp LA(TAB)  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
 &kp LEFT_SHIFT    &kp Z     &kp X   &kp C   &kp D   &kp V                                                                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp PAGE_UP
 &kp LCTRL         &kp DOWN  &kp UP  &none   &mo 5                                                                                             &mo 5   &kp HOME   &kp LBKT  &kp RBKT  &kp PAGE_DOWN
-                                                                                &kp LALT   &none        &none  &kp DEL
+                                                                                &kp LALT   &none        &mo 6  &kp DEL
                                                                                            &kp LGUI     &mo 6
                                                                        &kp RET  &kp SPACE  &kp LSHFT    &mo 3  &kp BSPC  &kp RSHFT
             >;
@@ -309,14 +309,14 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans        &trans     &trans     &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans                                                                                          &trans     &trans     &trans     &trans         &trans
-                                                                &trans  &trans            &trans  &trans
-                                                                        &trans            &trans
-                                                        &trans  &trans  &kp LEFT_SHIFT    &trans  &trans  &trans
+&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &trans        &trans     &trans     &trans     &trans         &trans
+&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
+&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
+&trans  &trans    &trans     &trans  &trans  &trans                                                            &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
+&trans  &kp LEFT  &kp RIGHT  &trans  &trans                                                                                  &trans     &trans     &trans     &trans         &trans
+                                                                     &trans  &trans    &trans  &trans
+                                                                             &trans    &trans
+                                                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "nav";

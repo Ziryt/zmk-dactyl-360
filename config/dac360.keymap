@@ -309,14 +309,14 @@
 
         nav {
             bindings = <
-&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &trans        &trans     &trans     &trans     &trans         &trans
-&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
-&trans  &trans    &trans     &trans  &trans  &trans  &trans                                            &trans  &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
-&trans  &trans    &trans     &trans  &trans  &trans                                                            &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
-&trans  &kp LEFT  &kp RIGHT  &trans  &trans                                                                                  &trans     &trans     &trans     &trans         &trans
-                                                                     &trans  &trans    &trans  &trans
-                                                                             &trans    &trans
-                                                             &trans  &trans  &trans    &trans  &trans  &trans
+&trans         &trans    &trans     &trans         &trans  &trans  &trans                                                              &trans  &trans        &trans     &trans     &trans     &trans         &trans
+&kp LG(LS(S))  &trans    &trans     &trans         &trans  &trans  &trans                                                              &trans  &trans        &kp HOME   &kp UP     &kp END    &trans         &trans
+&trans         &trans    &trans     &trans         &trans  &trans  &trans                                                              &trans  &kp LC(LEFT)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &trans
+&trans         &trans    &trans     &kp LG(LS(C))  &trans  &trans                                                                              &trans        &kp PG_DN  &kp PG_UP  &trans     &trans         &trans
+&trans         &kp LEFT  &kp RIGHT  &trans         &trans                                                                                                    &trans     &trans     &trans     &trans         &trans
+                                                                                              &trans         &trans    &trans  &trans
+                                                                                                             &trans    &trans
+                                                                           &kp LC(LS(SPACE))  &kp LA(SPACE)  &trans    &trans  &trans  &trans
             >;
 
             label = "nav";
